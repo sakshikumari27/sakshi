@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nykaa - Beauty & Cosmetics</title>
+    <style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.header {
+    background: #ff6f91;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffe0e6;
+}
+
+.hero {
+    background: linear-gradient(to right, #ff6f91, #ff9f8e);
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 1.5s ease;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    animation: fadeIn 2s ease;
+}
+
+.button {
+    background: aqua;
+    color: #ff6f91;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: transform 0.3s, background 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #ffe0e6;
+    transform: scale(1.1);
+}
+
+.products {
+    padding: 2rem;
+    text-align: center;
+    background: white;
+}
+
+.product-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    padding: 1rem;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about, .contact {
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Nykaa</div>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="products nyla.html">Products</a>
+            <a href="#">About</a>
+            <a href="#contact">Contact</a>
+            <a href="cart nyka.html" class="cart-button">Cart</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Welcome to Nykaa</h1>
+            <p>Your one-stop shop for beauty, skincare, and cosmetics.</p>
+            <a href="#products" class="button">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="download (6).jpg" alt="Product 1">
+                <h3>Lipstick</h3>
+                <p>$15</p>
+                <button class="button"><a href="cart nyka.html">Add to Cart</button></a>
+            </div>
+            <div class="product-card">
+                <img src="download.jpg" alt="Product 2">
+                <h3>Foundation</h3>
+                <p>$25</p>
+                <button class="button"><a href="cart nyka.html">Add to Cart</button></a>
+            </div>
+            <div class="product-card">
+                <img src="download (1).jpg" alt="Product 3">
+                <h3>Eyeshadow</h3>
+                <p>$20</p>
+                <button class="button"><a href="cart nyka.html">Add to Cart</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Nykaa is a premier beauty and cosmetics retailer offering top-quality products from global and local brands.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@nykaa.com</p>
+        <p>Phone: +1 800 555 1234</p>
+    </section>
+
+    <footer id="contact" class="footer">
+        <p>&copy; 2025 Nykaa. All rights reserved.</p>
+    </footer>
+</body>
+</html>
